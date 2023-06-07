@@ -1,5 +1,6 @@
-# Batch 16 developer 1 project
-we have all classes and everything here
+# Batch 16 Developer 1 project
+
+We have all classes, trigger, code, etc that we learned in last 10 weeks.
 
 # Salesforce DX Project: Next Steps
 
