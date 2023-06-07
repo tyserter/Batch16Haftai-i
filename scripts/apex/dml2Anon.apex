@@ -1,0 +1,1 @@
+DmlDemo2.dmlBulUpdateRight2();
