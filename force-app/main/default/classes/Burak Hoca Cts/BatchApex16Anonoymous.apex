@@ -12,3 +12,6 @@ for (account acc : accList) {
     acc.name = acc.name.remove('--');
 }
 update accList;
+
+BatchClassMail bcm = new BatchClassMail();
+Database.executeBatch(bcm, 4 );
