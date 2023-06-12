@@ -1,6 +1,9 @@
+ /*  3. Whenever Lead is created with LeadSource as Web then show "Rating should be Cold"
+message otherwise show "Rating should be hot"*/
+
 trigger LeadTriggerAssign on Lead (before insert, after insert, before update, after update) {
-    if (trigger.isInsert && trigger.isAfter ) {
-        for (Lead newL : trigger.new) {
+    if (trigger.isAfter && trigger.isInsert ) {
+       /* for (Lead newL : trigger.new) {
             if (newL.LeadSource == 'web') {
                 System.debug('Rating should be Cold');
 
@@ -9,7 +12,9 @@ trigger LeadTriggerAssign on Lead (before insert, after insert, before update, a
                 System.debug('Rating should be hot');
             }
             
-        }
+        }*/
+
+        triggerHandler.createLead(trigger.new);
         
     }
 

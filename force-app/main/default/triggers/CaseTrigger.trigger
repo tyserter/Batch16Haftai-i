@@ -2,7 +2,8 @@ trigger CaseTrigger on Case (before insert, after insert, before update, after u
 
     //! burası 9.Assigment 28.05.2023
     if (Trigger.isAfter && trigger.isInsert) {
-           CaseHandler.createCase(trigger.new);
+           //CaseHandler.createCase(trigger.new);
+           tiggerHandler.createCase(trigger.new);
     }      
    
    
